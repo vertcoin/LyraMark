@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LyraMark" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LyraMark" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LyraMark" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Lyra2RE/Lyra2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/Lyra2.h" />
+		<Unit filename="Lyra2RE/Lyra2RE.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/Lyra2RE.h" />
+		<Unit filename="Lyra2RE/Sponge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/Sponge.h" />
+		<Unit filename="Lyra2RE/blake.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/groestl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/keccak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/main.cpp" />
+		<Unit filename="Lyra2RE/skein.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Lyra2RE/sph_blake.h" />
+		<Unit filename="Lyra2RE/sph_groestl.h" />
+		<Unit filename="Lyra2RE/sph_keccak.h" />
+		<Unit filename="Lyra2RE/sph_skein.h" />
+		<Unit filename="Lyra2RE/sph_types.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

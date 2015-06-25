@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1434807936 source:e:\work\lyramark\lyra2re\blake.c
+	<stddef.h>
+	<string.h>
+	<limits.h>
+	"sph_blake.h"
+
+1434807936 e:\work\lyramark\lyra2re\sph_blake.h
+	<stddef.h>
+	"sph_types.h"
+
+1434807936 e:\work\lyramark\lyra2re\sph_types.h
+	<limits.h>
+	<stdint.h>
+
+1434807936 source:e:\work\lyramark\lyra2re\groestl.c
+	<stddef.h>
+	<string.h>
+	"sph_groestl.h"
+
+1434807936 e:\work\lyramark\lyra2re\sph_groestl.h
+	<stddef.h>
+	"sph_types.h"
+
+1434807936 source:e:\work\lyramark\lyra2re\keccak.c
+	<stddef.h>
+	<string.h>
+	"sph_keccak.h"
+
+1434807936 e:\work\lyramark\lyra2re\sph_keccak.h
+	<stddef.h>
+	"sph_types.h"
+
+1435242728 source:e:\work\lyramark\lyra2re\lyra2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Lyra2.h"
+	"Sponge.h"
+
+1435242795 e:\work\lyramark\lyra2re\lyra2.h
+	<stdint.h>
+
+1435242104 e:\work\lyramark\lyra2re\sponge.h
+	<stdint.h>
+
+1435242527 source:e:\work\lyramark\lyra2re\lyra2re.c
+	"Lyra2RE.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<stdio.h>
+	"sph_blake.h"
+	"sph_groestl.h"
+	"sph_keccak.h"
+	"sph_skein.h"
+	"Lyra2.h"
+
+1435241405 e:\work\lyramark\lyra2re\lyra2re.h
+	<stdint.h>
+
+1434807936 e:\work\lyramark\lyra2re\sph_skein.h
+	<stddef.h>
+	"sph_types.h"
+
+1434807936 source:e:\work\lyramark\lyra2re\skein.c
+	<stddef.h>
+	<string.h>
+	"sph_skein.h"
+
+1435247165 source:e:\work\lyramark\lyra2re\main.cpp
+	<iostream>
+	<chrono>
+	<fstream>
+	<thread>
+	<vector>
+	"Lyra2RE.h"
+
+1435242086 source:e:\work\lyramark\lyra2re\sponge.c
+	<string.h>
+	<stdio.h>
+	<time.h>
+	"Sponge.h"
+	"Lyra2.h"
+
