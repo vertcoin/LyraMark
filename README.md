@@ -11,4 +11,5 @@ LyraMark is a benchmarking tool for the Lyra2RE PoW (Proof of Work) algorithm us
 ### Dependencies
 
 * Code::Blocks IDE for the project file.
+* Octave/Matlab for the data analysis tools.
 * What else...
