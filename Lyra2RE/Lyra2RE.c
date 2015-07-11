@@ -55,9 +55,9 @@ void lyra2re_hash(const char* input, char* output, uint64_t timeCost, uint64_t n
     sph_keccak256 (&ctx_keccak,hashA, 32);
     sph_keccak256_close(&ctx_keccak, hashB);
 
-	LYRA2(hashA, 32, hashB, 32, hashB, 32, timeCost, nRows, nCols);
+    LYRA2(hashA, 32, hashB, 32, hashB, 32, timeCost, nRows, nCols);
 
-	sph_skein256_init(&ctx_skein);
+    sph_skein256_init(&ctx_skein);
     sph_skein256 (&ctx_skein, hashA, 32);
     sph_skein256_close(&ctx_skein, hashB);
 
@@ -65,5 +65,5 @@ void lyra2re_hash(const char* input, char* output, uint64_t timeCost, uint64_t n
     sph_groestl256 (&ctx_groestl, hashB, 32);
     sph_groestl256_close(&ctx_groestl, hashA);
 
-	memcpy(output, hashA, 32);
+    memcpy(output, hashA, 32);
 }
