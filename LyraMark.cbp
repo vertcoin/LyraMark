@@ -25,12 +25,20 @@
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
 					<Add option="-std=c++11" />
+					<Add option="-fopenmp" />
 				</Compiler>
+				<Linker>
+					<Add library="gomp" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-pg" />
 		</Compiler>
+		<Linker>
+			<Add option="-pg" />
+		</Linker>
 		<Unit filename="Lyra2RE/Lyra2.c">
 			<Option compilerVar="CC" />
 		</Unit>

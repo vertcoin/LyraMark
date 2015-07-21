@@ -84,3 +84,90 @@
 	"Sponge.h"
 	"Lyra2.h"
 
+1437337136 source:/home/valerius/Projects/LyraMark/Lyra2RE/blake.c
+	<stddef.h>
+	<string.h>
+	<limits.h>
+	"sph_blake.h"
+
+1437337139 /home/valerius/Projects/LyraMark/Lyra2RE/sph_blake.h
+	<stddef.h>
+	"sph_types.h"
+
+1437337137 /home/valerius/Projects/LyraMark/Lyra2RE/sph_types.h
+	<limits.h>
+	<stdint.h>
+
+1437337138 source:/home/valerius/Projects/LyraMark/Lyra2RE/groestl.c
+	<stddef.h>
+	<string.h>
+	"sph_groestl.h"
+
+1437337138 /home/valerius/Projects/LyraMark/Lyra2RE/sph_groestl.h
+	<stddef.h>
+	"sph_types.h"
+
+1437337136 source:/home/valerius/Projects/LyraMark/Lyra2RE/keccak.c
+	<stddef.h>
+	<string.h>
+	"sph_keccak.h"
+
+1437337139 /home/valerius/Projects/LyraMark/Lyra2RE/sph_keccak.h
+	<stddef.h>
+	"sph_types.h"
+
+1437337138 source:/home/valerius/Projects/LyraMark/Lyra2RE/Lyra2.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Lyra2.h"
+	"Sponge.h"
+
+1437337137 /home/valerius/Projects/LyraMark/Lyra2RE/Lyra2.h
+	<stdint.h>
+
+1437337137 /home/valerius/Projects/LyraMark/Lyra2RE/Sponge.h
+	<stdint.h>
+
+1437337138 source:/home/valerius/Projects/LyraMark/Lyra2RE/Lyra2RE.c
+	"Lyra2RE.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<stdio.h>
+	"sph_blake.h"
+	"sph_groestl.h"
+	"sph_keccak.h"
+	"sph_skein.h"
+	"Lyra2.h"
+
+1437337139 /home/valerius/Projects/LyraMark/Lyra2RE/Lyra2RE.h
+	<stdint.h>
+
+1437337137 /home/valerius/Projects/LyraMark/Lyra2RE/sph_skein.h
+	<stddef.h>
+	"sph_types.h"
+
+1437337137 source:/home/valerius/Projects/LyraMark/Lyra2RE/skein.c
+	<stddef.h>
+	<string.h>
+	"sph_skein.h"
+
+1437337139 source:/home/valerius/Projects/LyraMark/Lyra2RE/Sponge.c
+	<string.h>
+	<stdio.h>
+	<time.h>
+	"Sponge.h"
+	"Lyra2.h"
+
+1437427137 source:/home/valerius/Projects/LyraMark/Lyra2RE/main.cpp
+	<unistd.h>
+	<ios>
+	<iostream>
+	<chrono>
+	<fstream>
+	<string>
+	<omp.h>
+	"Lyra2RE.h"
+

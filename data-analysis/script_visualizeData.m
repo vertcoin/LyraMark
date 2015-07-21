@@ -4,23 +4,35 @@
 #------------------------------------------------------------------------------
 SAVE_IMAGES = false; # Set this true to save images to (eps and/or png) files.
 
+# Set parameter that will be used for data extraction.
+MAX_TIMECOST = 5;
+MIN_COLS = 4;
+MAX_COLS = 64;
+MIN_ROWS = 4;
+MAX_ROWS = 64;
+
 data = csvread('benchmark.csv');
+#data = csvread('benchmark_xeon_e3-1230v2.csv');
 #data = csvread('../bin/Release/benchmark.csv');
 
+rowCount = MAX_ROWS - MIN_ROWS + 1;
+colCount = MAX_COLS - MIN_COLS + 1;
+
+
 # Take data for the selected time costs
-for timeCost = 1:10
+for timeCost = 1:MAX_TIMECOST
 
   visualData = data(data(:, 1) == timeCost, :);
 
 
   # Extract rows, cols and hashrates
-  rows = zeros(61,61);
+  rows = zeros(rowCount, colCount);
   rows(:) = visualData(:, 2);
 
-  cols = zeros(61,61);
+  cols = zeros(rowCount, colCount);
   cols(:) = visualData(:, 3);
 
-  hashrates = zeros(61,61);
+  hashrates = zeros(rowCount, colCount);
   hashrates(:) = visualData(:, 4);
 
   # Create a 3-D plot
@@ -33,7 +45,7 @@ for timeCost = 1:10
   xlabel('Rows');
   ylabel('Columns');
   zlabel('kh/s');
-  zlim([0.0 250.0]);
+  zlim([0.0 1000.0]);
 
   # Set viewpoint: azimuth = 135°, elevation = 45°
   view(135, 45);
