@@ -1,0 +1,296 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 32.64      2.66     2.66  8000000     0.33     0.33  reducedDuplexRowSetup
+ 19.14      4.22     1.56  5000000     0.31     0.31  reducedDuplexRow
+ 11.17      5.13     0.91  1000000     0.91     0.91  sph_keccak256_close
+  8.22      5.80     0.67  2000000     0.34     0.34  groestl_small_core
+  6.99      6.37     0.57  2000000     0.29     0.29  blake32
+  4.79      6.76     0.39  1000000     0.39     0.73  groestl_small_close
+  4.66      7.14     0.38  2000000     0.19     0.19  absorbBlockBlake2Safe
+  3.19      7.40     0.26  1000000     0.26     0.26  skein_big_close
+  2.58      7.61     0.21  1000000     0.21     0.21  reducedSqueezeRow0
+  2.09      7.78     0.17  1000000     0.17     5.28  LYRA2
+  2.09      7.95     0.17  1000000     0.17     0.17  reducedDuplexRow1
+  1.60      8.08     0.13  1000000     0.13     0.13  absorbBlock
+  0.25      8.10     0.02  1000000     0.02     0.02  skein_big_core
+  0.12      8.11     0.01  1000000     0.01     0.01  keccak_core
+  0.12      8.12     0.01  1000000     0.01     0.30  sph_blake256_close
+  0.12      8.13     0.01  1000000     0.01     0.01  sph_keccak256_init
+  0.12      8.14     0.01                             processMemUsage(double&, double&)
+  0.06      8.15     0.01  1000000     0.01     0.01  sph_blake256
+  0.06      8.15     0.01  1000000     0.01     0.01  sph_blake256_init
+  0.00      8.15     0.00  1000000     0.00     0.00  initState
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_groestl256
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_groestl256_close
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_groestl256_init
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_keccak256
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_skein256
+  0.00      8.15     0.00  1000000     0.00     0.26  sph_skein256_close
+  0.00      8.15     0.00  1000000     0.00     0.00  sph_skein256_init
+  0.00      8.15     0.00  1000000     0.00     0.00  squeeze
+  0.00      8.15     0.00        1     0.00     0.00  _GLOBAL__sub_I__Z15processMemUsageRdS_
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.12% of 8.15 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.9    0.00    8.14                 lyra2re_hash [1]
+                0.17    5.11 1000000/1000000     LYRA2 [2]
+                0.91    0.00 1000000/1000000     sph_keccak256_close [5]
+                0.39    0.34 1000000/1000000     groestl_small_close [6]
+                0.34    0.00 1000000/2000000     groestl_small_core [7]
+                0.01    0.29 1000000/1000000     sph_blake256_close [10]
+                0.29    0.00 1000000/2000000     blake32 [8]
+                0.00    0.26 1000000/1000000     sph_skein256_close [12]
+                0.02    0.00 1000000/1000000     skein_big_core [16]
+                0.01    0.00 1000000/1000000     sph_keccak256_init [18]
+                0.01    0.00 1000000/1000000     keccak_core [17]
+                0.01    0.00 1000000/1000000     sph_blake256_init [21]
+                0.01    0.00 1000000/1000000     sph_blake256 [20]
+                0.00    0.00 1000000/1000000     sph_keccak256 [26]
+                0.00    0.00 1000000/1000000     sph_skein256_init [28]
+                0.00    0.00 1000000/1000000     sph_skein256 [27]
+                0.00    0.00 1000000/1000000     sph_groestl256_init [25]
+                0.00    0.00 1000000/1000000     sph_groestl256 [23]
+                0.00    0.00 1000000/1000000     sph_groestl256_close [24]
+-----------------------------------------------
+                0.17    5.11 1000000/1000000     lyra2re_hash [1]
+[2]     64.8    0.17    5.11 1000000         LYRA2 [2]
+                2.66    0.00 8000000/8000000     reducedDuplexRowSetup [3]
+                1.56    0.00 5000000/5000000     reducedDuplexRow [4]
+                0.38    0.00 2000000/2000000     absorbBlockBlake2Safe [9]
+                0.21    0.00 1000000/1000000     reducedSqueezeRow0 [13]
+                0.17    0.00 1000000/1000000     reducedDuplexRow1 [14]
+                0.13    0.00 1000000/1000000     absorbBlock [15]
+                0.00    0.00 1000000/1000000     initState [22]
+                0.00    0.00 1000000/1000000     squeeze [29]
+-----------------------------------------------
+                2.66    0.00 8000000/8000000     LYRA2 [2]
+[3]     32.6    2.66    0.00 8000000         reducedDuplexRowSetup [3]
+-----------------------------------------------
+                1.56    0.00 5000000/5000000     LYRA2 [2]
+[4]     19.1    1.56    0.00 5000000         reducedDuplexRow [4]
+-----------------------------------------------
+                0.91    0.00 1000000/1000000     lyra2re_hash [1]
+[5]     11.2    0.91    0.00 1000000         sph_keccak256_close [5]
+-----------------------------------------------
+                0.39    0.34 1000000/1000000     lyra2re_hash [1]
+[6]      8.9    0.39    0.34 1000000         groestl_small_close [6]
+                0.34    0.00 1000000/2000000     groestl_small_core [7]
+-----------------------------------------------
+                0.34    0.00 1000000/2000000     groestl_small_close [6]
+                0.34    0.00 1000000/2000000     lyra2re_hash [1]
+[7]      8.2    0.67    0.00 2000000         groestl_small_core [7]
+-----------------------------------------------
+                0.29    0.00 1000000/2000000     sph_blake256_close [10]
+                0.29    0.00 1000000/2000000     lyra2re_hash [1]
+[8]      7.0    0.57    0.00 2000000         blake32 [8]
+-----------------------------------------------
+                0.38    0.00 2000000/2000000     LYRA2 [2]
+[9]      4.7    0.38    0.00 2000000         absorbBlockBlake2Safe [9]
+-----------------------------------------------
+                0.01    0.29 1000000/1000000     lyra2re_hash [1]
+[10]     3.6    0.01    0.29 1000000         sph_blake256_close [10]
+                0.29    0.00 1000000/2000000     blake32 [8]
+-----------------------------------------------
+                0.26    0.00 1000000/1000000     sph_skein256_close [12]
+[11]     3.2    0.26    0.00 1000000         skein_big_close [11]
+-----------------------------------------------
+                0.00    0.26 1000000/1000000     lyra2re_hash [1]
+[12]     3.2    0.00    0.26 1000000         sph_skein256_close [12]
+                0.26    0.00 1000000/1000000     skein_big_close [11]
+-----------------------------------------------
+                0.21    0.00 1000000/1000000     LYRA2 [2]
+[13]     2.6    0.21    0.00 1000000         reducedSqueezeRow0 [13]
+-----------------------------------------------
+                0.17    0.00 1000000/1000000     LYRA2 [2]
+[14]     2.1    0.17    0.00 1000000         reducedDuplexRow1 [14]
+-----------------------------------------------
+                0.13    0.00 1000000/1000000     LYRA2 [2]
+[15]     1.6    0.13    0.00 1000000         absorbBlock [15]
+-----------------------------------------------
+                0.02    0.00 1000000/1000000     lyra2re_hash [1]
+[16]     0.2    0.02    0.00 1000000         skein_big_core [16]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     lyra2re_hash [1]
+[17]     0.1    0.01    0.00 1000000         keccak_core [17]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     lyra2re_hash [1]
+[18]     0.1    0.01    0.00 1000000         sph_keccak256_init [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     0.1    0.01    0.00                 processMemUsage(double&, double&) [19]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     lyra2re_hash [1]
+[20]     0.1    0.01    0.00 1000000         sph_blake256 [20]
+-----------------------------------------------
+                0.01    0.00 1000000/1000000     lyra2re_hash [1]
+[21]     0.1    0.01    0.00 1000000         sph_blake256_init [21]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     LYRA2 [2]
+[22]     0.0    0.00    0.00 1000000         initState [22]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[23]     0.0    0.00    0.00 1000000         sph_groestl256 [23]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[24]     0.0    0.00    0.00 1000000         sph_groestl256_close [24]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[25]     0.0    0.00    0.00 1000000         sph_groestl256_init [25]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[26]     0.0    0.00    0.00 1000000         sph_keccak256 [26]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[27]     0.0    0.00    0.00 1000000         sph_skein256 [27]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     lyra2re_hash [1]
+[28]     0.0    0.00    0.00 1000000         sph_skein256_init [28]
+-----------------------------------------------
+                0.00    0.00 1000000/1000000     LYRA2 [2]
+[29]     0.0    0.00    0.00 1000000         squeeze [29]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [99]
+[93]     0.0    0.00    0.00       1         _GLOBAL__sub_I__Z15processMemUsageRdS_ [93]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [2] LYRA2                   [4] reducedDuplexRow       [24] sph_groestl256_close
+  [93] _GLOBAL__sub_I__Z15processMemUsageRdS_ [14] reducedDuplexRow1 [25] sph_groestl256_init
+  [19] processMemUsage(double&, double&) [3] reducedDuplexRowSetup [26] sph_keccak256
+  [15] absorbBlock            [13] reducedSqueezeRow0      [5] sph_keccak256_close
+   [9] absorbBlockBlake2Safe  [11] skein_big_close        [18] sph_keccak256_init
+   [8] blake32                [16] skein_big_core         [27] sph_skein256
+   [6] groestl_small_close    [20] sph_blake256           [12] sph_skein256_close
+   [7] groestl_small_core     [10] sph_blake256_close     [28] sph_skein256_init
+  [22] initState              [21] sph_blake256_init      [29] squeeze
+  [17] keccak_core            [23] sph_groestl256

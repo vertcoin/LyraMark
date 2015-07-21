@@ -34,11 +34,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-pg" />
 		</Compiler>
-		<Linker>
-			<Add option="-pg" />
-		</Linker>
 		<Unit filename="Lyra2RE/Lyra2.c">
 			<Option compilerVar="CC" />
 		</Unit>
