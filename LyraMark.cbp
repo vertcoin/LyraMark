@@ -25,7 +25,11 @@
 					<Add option="-fexpensive-optimizations" />
 					<Add option="-O3" />
 					<Add option="-std=c++11" />
+					<Add option="-fopenmp" />
 				</Compiler>
+				<Linker>
+					<Add library="gomp" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
