@@ -5,14 +5,14 @@
 SAVE_IMAGES = false; # Set this true to save images to (eps and/or png) files.
 
 # Set parameter that will be used for data extraction.
-MAX_TIMECOST = 5;
+MAX_TIMECOST = 10;
 MIN_COLS = 4;
 MAX_COLS = 64;
 MIN_ROWS = 4;
 MAX_ROWS = 64;
 
-data = csvread('benchmark.csv');
-#data = csvread('benchmark_xeon_e3-1230v2.csv');
+#data = csvread('benchmark.csv');
+data = csvread('benchmark_i5-3570k.csv');
 #data = csvread('../bin/Release/benchmark.csv');
 
 rowCount = MAX_ROWS - MIN_ROWS + 1;
@@ -45,7 +45,7 @@ for timeCost = 1:MAX_TIMECOST
   xlabel('Rows');
   ylabel('Columns');
   zlabel('kh/s');
-  zlim([0.0 1000.0]);
+  zlim([0.0 800.0]);
 
   # Set viewpoint: azimuth = 135°, elevation = 45°
   view(135, 45);
