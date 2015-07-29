@@ -2,7 +2,7 @@
 # This is a script for visualizing LyraMark benchmarking tool results
 # for different parameters of Lyra2RE algorithm.
 #------------------------------------------------------------------------------
-SAVE_IMAGES = true; # Set this true to save images to (eps and/or png) files.
+SAVE_IMAGES = false; # Set this true to save images to (eps and/or png) files.
 
 # Set parameter that will be used for data extraction.
 MAX_TIMECOST = 10;
